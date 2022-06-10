@@ -1,0 +1,80 @@
+
+
+.card:hover
+{
+    transform:scale(.9);
+
+}
+.card:hover:after
+{
+    height:125%;
+
+}
+.card:hover .con-text p
+{
+    margin-bottom:0px;
+    opacity:1; /*transparanlik*/
+}
+.card:hover column
+{
+    transform: scale(1.10);
+}
+.card:after
+{
+    width: 100%;
+    content= '';
+    left:0px;
+    bottom: 0px;
+    position: absolute; /*z-index kullanımı için zorunlu*/
+    z-index: 10;
+    transition : all .25s ease;
+
+
+}
+
+.card column {
+    height: 50%;
+    z-index:10;
+    transition: all .25s ease;
+}
+.card .con-text
+{
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+
+}
+
+
+.card .con-text h2
+{
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+  .column {
+    float: left;
+    padding: 2px;
+  }
+  
+ 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .card .con-text p
+{
+    
+    opacity:0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center; /*dikeyde hizalama*/
+    justify-content: flex-end; /*son nesne en sağa*/
+    flex-direction: column;
+
+}
